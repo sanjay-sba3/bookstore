@@ -1,0 +1,37 @@
+INFO 2023-06-20 16:24:56,197 autoreload 18844 18900 Watching for file changes with StatReloader
+INFO 2023-06-20 16:25:06,895 autoreload 18844 18900 D:\bookstore_project\bookstore\bookstore\settings.py changed, reloading.
+INFO 2023-06-20 16:25:07,551 autoreload 9668 21780 Watching for file changes with StatReloader
+INFO 2023-06-20 16:25:25,727 autoreload 14076 16268 Watching for file changes with StatReloader
+INFO 2023-06-20 16:26:21,584 basehttp 14076 14800 "GET /books HTTP/1.1" 301 0
+INFO 2023-06-20 16:26:21,600 views 14076 2892 this is books get request
+INFO 2023-06-20 16:26:21,624 basehttp 14076 2892 "GET /books/ HTTP/1.1" 200 2211
+INFO 2023-06-20 16:26:38,617 basehttp 14076 2892 "GET /books HTTP/1.1" 301 0
+INFO 2023-06-20 16:26:38,626 views 14076 856 this is books get request
+INFO 2023-06-20 16:26:38,658 basehttp 14076 856 "GET /books/ HTTP/1.1" 200 2211
+INFO 2023-06-20 16:26:58,327 autoreload 14076 16268 D:\bookstore_project\bookstore\bookstore\settings.py changed, reloading.
+INFO 2023-06-20 16:26:59,153 autoreload 3396 20416 Watching for file changes with StatReloader
+INFO 2023-06-20 16:27:00,889 basehttp 3396 15584 "GET /books HTTP/1.1" 301 0
+INFO 2023-06-20 16:27:00,914 views 3396 7304 this is books get request
+INFO 2023-06-20 16:27:00,930 basehttp 3396 7304 "GET /books/ HTTP/1.1" 200 2211
+INFO 2023-06-20 16:48:19,908 autoreload 3396 20416 D:\bookstore_project\bookstore\books\models.py changed, reloading.
+INFO 2023-06-20 16:48:20,618 autoreload 19380 20852 Watching for file changes with StatReloader
+INFO 2023-06-20 16:51:59,096 autoreload 17304 12640 Watching for file changes with StatReloader
+INFO 2023-06-20 16:52:01,390 basehttp 17304 19792 "GET /user HTTP/1.1" 301 0
+INFO 2023-06-20 16:52:01,453 basehttp 17304 2564 "GET /user/ HTTP/1.1" 200 4045
+WARNING 2023-06-20 16:52:41,838 log 17304 2564 Bad Request: /user/
+WARNING 2023-06-20 16:52:41,838 basehttp 17304 2564 "POST /user/ HTTP/1.1" 400 79
+WARNING 2023-06-20 16:53:36,886 log 17304 2564 Bad Request: /user/
+WARNING 2023-06-20 16:53:36,887 basehttp 17304 2564 "POST /user/ HTTP/1.1" 400 40
+INFO 2023-06-20 16:56:22,552 autoreload 17304 12640 D:\bookstore_project\bookstore\books\models.py changed, reloading.
+INFO 2023-06-20 16:56:23,182 autoreload 836 11952 Watching for file changes with StatReloader
+INFO 2023-06-20 16:56:27,959 autoreload 836 11952 D:\bookstore_project\bookstore\books\models.py changed, reloading.
+INFO 2023-06-20 16:56:28,608 autoreload 21696 4576 Watching for file changes with StatReloader
+INFO 2023-06-20 16:56:32,716 autoreload 21696 4576 D:\bookstore_project\bookstore\books\models.py changed, reloading.
+INFO 2023-06-20 16:56:33,439 autoreload 20612 20416 Watching for file changes with StatReloader
+INFO 2023-06-20 16:56:35,117 autoreload 20612 20416 D:\bookstore_project\bookstore\books\models.py changed, reloading.
+INFO 2023-06-20 16:56:35,705 autoreload 19948 18224 Watching for file changes with StatReloader
+INFO 2023-06-20 16:56:37,614 autoreload 19948 18224 D:\bookstore_project\bookstore\books\models.py changed, reloading.
+INFO 2023-06-20 16:56:38,319 autoreload 19824 23060 Watching for file changes with StatReloader
+WARNING 2023-06-20 16:56:43,888 log 19824 8168 Bad Request: /user/
+WARNING 2023-06-20 16:56:43,888 basehttp 19824 8168 "POST /user/ HTTP/1.1" 400 40
+INFO 2023-06-20 16:56:54,180 basehttp 19824 8168 "POST /user/ HTTP/1.1" 200 348
