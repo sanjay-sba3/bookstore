@@ -35,3 +35,852 @@ INFO 2023-06-20 16:56:38,319 autoreload 19824 23060 Watching for file changes wi
 WARNING 2023-06-20 16:56:43,888 log 19824 8168 Bad Request: /user/
 WARNING 2023-06-20 16:56:43,888 basehttp 19824 8168 "POST /user/ HTTP/1.1" 400 40
 INFO 2023-06-20 16:56:54,180 basehttp 19824 8168 "POST /user/ HTTP/1.1" 200 348
+INFO 2023-06-21 09:38:32,863 autoreload 12564 9404 Watching for file changes with StatReloader
+WARNING 2023-06-21 09:38:36,311 log 12564 16248 Not Found: /
+WARNING 2023-06-21 09:38:36,312 basehttp 12564 16248 "GET / HTTP/1.1" 404 3994
+WARNING 2023-06-21 09:38:36,373 log 12564 16248 Not Found: /favicon.ico
+INFO 2023-06-21 09:38:36,374 basehttp 12564 16248 - Broken pipe from ('127.0.0.1', 60771)
+INFO 2023-06-21 09:39:14,418 basehttp 12564 18820 "POST /login/ HTTP/1.1" 200 532
+WARNING 2023-06-21 09:39:37,629 log 12564 18820 Bad Request: /user/
+WARNING 2023-06-21 09:39:37,630 basehttp 12564 18820 "POST /user/ HTTP/1.1" 400 56
+INFO 2023-06-21 09:39:56,207 basehttp 12564 18820 "POST /user/ HTTP/1.1" 200 344
+INFO 2023-06-21 12:06:14,019 autoreload 12964 19688 Watching for file changes with StatReloader
+WARNING 2023-06-21 12:06:17,367 log 12964 8272 Not Found: /
+WARNING 2023-06-21 12:06:17,368 basehttp 12964 8272 "GET / HTTP/1.1" 404 3872
+INFO 2023-06-21 12:06:26,164 basehttp 12964 8272 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:06:26,223 basehttp 12964 1232 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2023-06-21 12:06:26,225 basehttp 12964 1232 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2023-06-21 12:06:26,233 basehttp 12964 4204 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2023-06-21 12:06:26,233 basehttp 12964 22576 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2023-06-21 12:06:26,234 basehttp 12964 16592 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2023-06-21 12:06:26,245 basehttp 12964 10456 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2023-06-21 12:06:26,286 basehttp 12964 8272 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2023-06-21 12:06:26,365 basehttp 12964 1232 - Broken pipe from ('127.0.0.1', 50446)
+INFO 2023-06-21 12:06:26,410 basehttp 12964 4204 "GET /swagger/?format=openapi HTTP/1.1" 200 7462
+WARNING 2023-06-21 12:07:10,283 log 12964 4204 Unauthorized: /books/
+WARNING 2023-06-21 12:07:10,283 basehttp 12964 4204 "GET /books/ HTTP/1.1" 401 58
+INFO 2023-06-21 12:07:24,979 views 12964 4204 this is books get request
+INFO 2023-06-21 12:07:25,004 basehttp 12964 4204 "GET /books/ HTTP/1.1" 200 2211
+ERROR 2023-06-21 12:09:00,092 log 12964 4204 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore\books\views.py", line 27, in post
+    loginuser = request.data['username']
+KeyError: 'username'
+ERROR 2023-06-21 12:09:00,094 basehttp 12964 4204 "POST /login/ HTTP/1.1" 500 18447
+INFO 2023-06-21 12:19:04,095 autoreload 12964 19688 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:19:04,712 autoreload 22848 14220 Watching for file changes with StatReloader
+INFO 2023-06-21 12:19:10,766 autoreload 22848 14220 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:19:11,441 autoreload 3840 13508 Watching for file changes with StatReloader
+INFO 2023-06-21 12:19:17,406 autoreload 3840 13508 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:19:18,018 autoreload 8752 2360 Watching for file changes with StatReloader
+INFO 2023-06-21 12:19:20,904 autoreload 8752 2360 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:19:21,629 autoreload 17996 13688 Watching for file changes with StatReloader
+WARNING 2023-06-21 12:19:54,880 log 17996 19252 Unauthorized: /category/
+WARNING 2023-06-21 12:19:54,882 basehttp 17996 19252 "POST /category/ HTTP/1.1" 401 58
+INFO 2023-06-21 12:20:03,008 basehttp 17996 19252 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:20:03,158 basehttp 17996 19252 "GET /swagger/?format=openapi HTTP/1.1" 200 8379
+INFO 2023-06-21 12:20:41,422 autoreload 17996 13688 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:20:42,063 autoreload 15148 21956 Watching for file changes with StatReloader
+INFO 2023-06-21 12:20:46,098 autoreload 15148 21956 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:20:46,704 autoreload 12808 22572 Watching for file changes with StatReloader
+INFO 2023-06-21 12:20:49,590 autoreload 12808 22572 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:20:50,252 autoreload 14332 2968 Watching for file changes with StatReloader
+INFO 2023-06-21 12:21:30,431 autoreload 5312 17144 Watching for file changes with StatReloader
+INFO 2023-06-21 12:21:42,547 basehttp 5312 2596 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:21:42,681 basehttp 5312 2596 "GET /swagger/?format=openapi HTTP/1.1" 200 8379
+WARNING 2023-06-21 12:21:48,778 log 5312 2596 Unauthorized: /user/
+WARNING 2023-06-21 12:21:48,778 basehttp 5312 2596 "POST /user/ HTTP/1.1" 401 58
+WARNING 2023-06-21 12:22:05,172 log 5312 2596 Unauthorized: /user/
+WARNING 2023-06-21 12:22:05,174 basehttp 5312 2596 "POST /user/ HTTP/1.1" 401 58
+WARNING 2023-06-21 12:22:05,868 log 5312 2596 Unauthorized: /user/
+WARNING 2023-06-21 12:22:05,868 basehttp 5312 2596 "POST /user/ HTTP/1.1" 401 58
+WARNING 2023-06-21 12:22:06,169 log 5312 2596 Unauthorized: /user/
+WARNING 2023-06-21 12:22:06,169 basehttp 5312 2596 "POST /user/ HTTP/1.1" 401 58
+WARNING 2023-06-21 12:22:20,216 log 5312 2596 Unauthorized: /user/
+WARNING 2023-06-21 12:22:20,216 basehttp 5312 2596 "GET /user/ HTTP/1.1" 401 58
+INFO 2023-06-21 12:22:35,940 basehttp 5312 2596 "GET /user/ HTTP/1.1" 200 4527
+INFO 2023-06-21 12:22:44,251 basehttp 5312 2596 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:22:44,411 basehttp 5312 4664 "GET /swagger/?format=openapi HTTP/1.1" 200 8379
+INFO 2023-06-21 12:22:44,427 basehttp 5312 2596 - Broken pipe from ('127.0.0.1', 51061)
+INFO 2023-06-21 12:23:29,560 autoreload 5312 17144 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:23:30,208 autoreload 2188 15276 Watching for file changes with StatReloader
+INFO 2023-06-21 12:23:37,468 autoreload 2188 15276 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:23:38,103 autoreload 5096 13980 Watching for file changes with StatReloader
+INFO 2023-06-21 12:23:46,458 autoreload 5096 13980 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:23:47,168 autoreload 15524 12404 Watching for file changes with StatReloader
+INFO 2023-06-21 12:23:50,257 autoreload 15524 12404 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:23:50,892 autoreload 9860 1160 Watching for file changes with StatReloader
+INFO 2023-06-21 12:24:24,725 autoreload 9860 1160 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:24:25,333 autoreload 21956 10272 Watching for file changes with StatReloader
+INFO 2023-06-21 12:24:27,253 autoreload 21956 10272 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:24:27,895 autoreload 18476 9192 Watching for file changes with StatReloader
+INFO 2023-06-21 12:24:32,067 autoreload 18476 9192 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:24:32,685 autoreload 13728 4712 Watching for file changes with StatReloader
+INFO 2023-06-21 12:24:36,582 autoreload 13728 4712 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:24:37,208 autoreload 4356 1364 Watching for file changes with StatReloader
+INFO 2023-06-21 12:24:50,733 basehttp 4356 14788 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:24:50,881 basehttp 4356 20144 "GET /swagger/?format=openapi HTTP/1.1" 200 8379
+INFO 2023-06-21 12:24:50,897 basehttp 4356 14788 - Broken pipe from ('127.0.0.1', 51229)
+INFO 2023-06-21 12:26:14,493 autoreload 4356 1364 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:26:15,107 autoreload 6380 19500 Watching for file changes with StatReloader
+INFO 2023-06-21 12:26:20,235 autoreload 6380 19500 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:26:20,852 autoreload 13068 16532 Watching for file changes with StatReloader
+INFO 2023-06-21 12:26:23,762 autoreload 13068 16532 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:26:24,390 autoreload 18796 19596 Watching for file changes with StatReloader
+INFO 2023-06-21 12:26:44,461 autoreload 18796 19596 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:26:45,079 autoreload 5688 14056 Watching for file changes with StatReloader
+INFO 2023-06-21 12:26:49,191 autoreload 5688 14056 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:26:49,788 autoreload 23272 20484 Watching for file changes with StatReloader
+INFO 2023-06-21 12:27:05,685 autoreload 23272 20484 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:27:06,311 autoreload 4488 11604 Watching for file changes with StatReloader
+INFO 2023-06-21 12:27:13,470 autoreload 4488 11604 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:27:14,105 autoreload 14552 16436 Watching for file changes with StatReloader
+INFO 2023-06-21 12:28:08,521 autoreload 14552 16436 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:28:09,266 autoreload 16700 10564 Watching for file changes with StatReloader
+INFO 2023-06-21 12:28:13,346 autoreload 16700 10564 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:28:13,975 autoreload 13972 19548 Watching for file changes with StatReloader
+INFO 2023-06-21 12:28:39,422 autoreload 13972 19548 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:28:40,059 autoreload 10608 22960 Watching for file changes with StatReloader
+INFO 2023-06-21 12:28:45,193 autoreload 10608 22960 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:28:45,882 autoreload 12460 4196 Watching for file changes with StatReloader
+INFO 2023-06-21 12:29:28,204 basehttp 12460 5752 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:29:28,369 basehttp 12460 300 "GET /swagger/?format=openapi HTTP/1.1" 200 8580
+INFO 2023-06-21 12:29:28,383 basehttp 12460 5752 - Broken pipe from ('127.0.0.1', 51416)
+INFO 2023-06-21 12:32:34,451 autoreload 12460 4196 D:\bookstore_project\bookstore\bookstore\settings.py changed, reloading.
+INFO 2023-06-21 12:32:35,132 autoreload 17332 12384 Watching for file changes with StatReloader
+INFO 2023-06-21 12:32:37,016 autoreload 17332 12384 D:\bookstore_project\bookstore\bookstore\settings.py changed, reloading.
+INFO 2023-06-21 12:32:37,632 autoreload 5172 10948 Watching for file changes with StatReloader
+INFO 2023-06-21 12:32:48,727 basehttp 5172 16804 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:32:48,881 basehttp 5172 22664 "GET /swagger/?format=openapi HTTP/1.1" 200 8580
+INFO 2023-06-21 12:32:48,892 basehttp 5172 16804 - Broken pipe from ('127.0.0.1', 51554)
+INFO 2023-06-21 12:34:05,775 autoreload 23172 764 Watching for file changes with StatReloader
+WARNING 2023-06-21 12:34:07,795 log 23172 15088 Not Found: /
+WARNING 2023-06-21 12:34:07,795 basehttp 23172 15088 "GET / HTTP/1.1" 404 3872
+WARNING 2023-06-21 12:34:07,831 log 23172 15088 Not Found: /favicon.ico
+INFO 2023-06-21 12:34:07,833 basehttp 23172 15088 - Broken pipe from ('127.0.0.1', 51630)
+WARNING 2023-06-21 12:34:09,533 log 23172 23224 Not Found: /
+WARNING 2023-06-21 12:34:09,533 basehttp 23172 23224 "GET / HTTP/1.1" 404 3872
+INFO 2023-06-21 12:34:24,124 basehttp 23172 23224 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:34:24,289 basehttp 23172 23224 "GET /swagger/?format=openapi HTTP/1.1" 200 8580
+INFO 2023-06-21 12:36:14,594 autoreload 23172 764 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:36:15,250 autoreload 9196 21660 Watching for file changes with StatReloader
+INFO 2023-06-21 12:36:18,098 autoreload 9196 21660 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:36:18,718 autoreload 10992 2100 Watching for file changes with StatReloader
+INFO 2023-06-21 12:36:30,350 autoreload 10992 2100 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:36:30,978 autoreload 4444 12692 Watching for file changes with StatReloader
+INFO 2023-06-21 12:36:33,942 autoreload 4444 12692 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:36:34,525 autoreload 21252 1164 Watching for file changes with StatReloader
+INFO 2023-06-21 12:36:47,096 basehttp 21252 18096 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:36:47,272 basehttp 21252 14348 "GET /swagger/?format=openapi HTTP/1.1" 200 8580
+INFO 2023-06-21 12:36:47,292 basehttp 21252 18096 - Broken pipe from ('127.0.0.1', 51741)
+INFO 2023-06-21 12:38:29,390 autoreload 21252 1164 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:38:30,037 autoreload 6640 13216 Watching for file changes with StatReloader
+INFO 2023-06-21 12:38:47,040 autoreload 6640 13216 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:38:47,657 autoreload 8756 17696 Watching for file changes with StatReloader
+INFO 2023-06-21 12:38:50,545 autoreload 8756 17696 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:38:51,273 autoreload 14220 20944 Watching for file changes with StatReloader
+INFO 2023-06-21 12:39:02,777 autoreload 14220 20944 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:39:03,371 autoreload 13240 23116 Watching for file changes with StatReloader
+INFO 2023-06-21 12:39:13,819 autoreload 13240 23116 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:39:14,488 autoreload 17172 11672 Watching for file changes with StatReloader
+INFO 2023-06-21 12:39:18,455 autoreload 17172 11672 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:39:19,111 autoreload 8188 18372 Watching for file changes with StatReloader
+INFO 2023-06-21 12:39:23,093 autoreload 8188 18372 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:39:23,703 autoreload 19748 12772 Watching for file changes with StatReloader
+INFO 2023-06-21 12:39:40,696 autoreload 19748 12772 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:39:41,314 autoreload 8172 11644 Watching for file changes with StatReloader
+INFO 2023-06-21 12:39:44,197 autoreload 8172 11644 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:39:44,779 autoreload 14796 21404 Watching for file changes with StatReloader
+INFO 2023-06-21 12:39:50,729 basehttp 14796 9728 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:39:50,877 basehttp 14796 15940 "GET /swagger/?format=openapi HTTP/1.1" 200 7161
+INFO 2023-06-21 12:39:50,901 basehttp 14796 9728 - Broken pipe from ('127.0.0.1', 51929)
+INFO 2023-06-21 12:40:11,142 autoreload 14796 21404 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:40:11,791 autoreload 19888 21996 Watching for file changes with StatReloader
+INFO 2023-06-21 12:40:16,682 basehttp 19888 20320 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:40:16,830 basehttp 19888 17108 "GET /swagger/?format=openapi HTTP/1.1" 200 8580
+INFO 2023-06-21 12:58:24,714 autoreload 16252 17288 Watching for file changes with StatReloader
+INFO 2023-06-21 12:58:31,564 basehttp 16252 2684 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:58:31,746 basehttp 16252 10252 "GET /swagger/?format=openapi HTTP/1.1" 200 8580
+INFO 2023-06-21 12:58:31,752 basehttp 16252 2684 - Broken pipe from ('127.0.0.1', 52622)
+INFO 2023-06-21 12:58:51,616 autoreload 16252 17288 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:58:52,363 autoreload 18936 5524 Watching for file changes with StatReloader
+INFO 2023-06-21 12:58:57,084 basehttp 18936 15132 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:58:57,254 basehttp 18936 16692 "GET /swagger/?format=openapi HTTP/1.1" 200 8374
+INFO 2023-06-21 12:59:22,688 autoreload 18936 5524 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:59:23,347 autoreload 6640 19156 Watching for file changes with StatReloader
+INFO 2023-06-21 12:59:25,417 autoreload 6640 19156 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:59:26,161 autoreload 15128 19080 Watching for file changes with StatReloader
+INFO 2023-06-21 12:59:28,191 autoreload 15128 19080 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:59:29,006 autoreload 15544 19900 Watching for file changes with StatReloader
+INFO 2023-06-21 12:59:33,551 basehttp 15544 21192 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 12:59:33,724 basehttp 15544 21192 "GET /swagger/?format=openapi HTTP/1.1" 200 8309
+INFO 2023-06-21 12:59:57,907 autoreload 15544 19900 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 12:59:58,605 autoreload 15724 3580 Watching for file changes with StatReloader
+INFO 2023-06-21 13:00:01,700 basehttp 15724 4312 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 13:00:01,850 basehttp 15724 19272 "GET /swagger/?format=openapi HTTP/1.1" 200 6993
+INFO 2023-06-21 13:00:13,983 autoreload 15724 3580 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:00:14,628 autoreload 17840 1536 Watching for file changes with StatReloader
+INFO 2023-06-21 13:00:40,237 autoreload 17840 1536 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:00:40,928 autoreload 18344 22448 Watching for file changes with StatReloader
+INFO 2023-06-21 13:00:45,012 autoreload 18344 22448 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:00:45,622 autoreload 21424 14780 Watching for file changes with StatReloader
+INFO 2023-06-21 13:00:48,526 autoreload 21424 14780 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:00:49,166 autoreload 19096 21584 Watching for file changes with StatReloader
+INFO 2023-06-21 13:00:59,218 basehttp 19096 11148 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 13:00:59,378 basehttp 19096 18252 "GET /swagger/?format=openapi HTTP/1.1" 200 8309
+INFO 2023-06-21 13:01:07,770 autoreload 19096 21584 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:01:08,521 autoreload 15132 18256 Watching for file changes with StatReloader
+INFO 2023-06-21 13:01:31,609 autoreload 7536 7340 Watching for file changes with StatReloader
+INFO 2023-06-21 13:01:37,627 basehttp 7536 20724 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 13:01:37,782 basehttp 7536 20724 "GET /swagger/?format=openapi HTTP/1.1" 200 8309
+INFO 2023-06-21 13:01:54,355 autoreload 7536 7340 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:01:55,169 autoreload 17624 13180 Watching for file changes with StatReloader
+INFO 2023-06-21 13:01:58,153 autoreload 17624 13180 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:01:58,738 autoreload 11604 16000 Watching for file changes with StatReloader
+INFO 2023-06-21 13:02:06,031 autoreload 11604 16000 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:02:06,699 autoreload 156 16996 Watching for file changes with StatReloader
+INFO 2023-06-21 13:02:09,597 autoreload 156 16996 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:02:10,314 autoreload 10580 19524 Watching for file changes with StatReloader
+INFO 2023-06-21 13:02:13,604 basehttp 10580 11948 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 13:02:13,759 basehttp 10580 14732 "GET /swagger/?format=openapi HTTP/1.1" 200 8309
+INFO 2023-06-21 13:02:13,781 basehttp 10580 11948 - Broken pipe from ('127.0.0.1', 52849)
+INFO 2023-06-21 13:05:09,329 basehttp 10580 21712 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 13:05:09,431 basehttp 10580 21712 - Broken pipe from ('127.0.0.1', 52977)
+INFO 2023-06-21 13:05:09,472 basehttp 10580 18268 "GET /swagger/?format=openapi HTTP/1.1" 200 8309
+INFO 2023-06-21 13:05:29,512 autoreload 10580 19524 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:05:30,310 autoreload 18540 17316 Watching for file changes with StatReloader
+INFO 2023-06-21 13:05:33,442 autoreload 18540 17316 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:05:34,181 autoreload 11232 1532 Watching for file changes with StatReloader
+INFO 2023-06-21 13:05:39,556 basehttp 11232 14040 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 13:05:39,706 basehttp 11232 13316 "GET /swagger/?format=openapi HTTP/1.1" 200 8309
+INFO 2023-06-21 13:05:39,727 basehttp 11232 14040 - Broken pipe from ('127.0.0.1', 52996)
+INFO 2023-06-21 13:05:54,886 basehttp 11232 13316 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 13:05:55,014 basehttp 11232 13316 - Broken pipe from ('127.0.0.1', 52997)
+INFO 2023-06-21 13:05:55,045 basehttp 11232 9264 "GET /swagger/?format=openapi HTTP/1.1" 200 8309
+INFO 2023-06-21 13:06:09,282 autoreload 11232 1532 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:06:09,903 autoreload 13924 4012 Watching for file changes with StatReloader
+INFO 2023-06-21 13:06:11,788 autoreload 13924 4012 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:06:12,549 autoreload 14836 15300 Watching for file changes with StatReloader
+INFO 2023-06-21 13:06:15,705 autoreload 14836 15300 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:06:16,441 autoreload 3320 6028 Watching for file changes with StatReloader
+INFO 2023-06-21 13:06:25,583 autoreload 3320 6028 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:06:26,251 autoreload 13088 17696 Watching for file changes with StatReloader
+INFO 2023-06-21 13:06:30,337 autoreload 13088 17696 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:06:31,037 autoreload 13628 21848 Watching for file changes with StatReloader
+INFO 2023-06-21 13:06:36,086 autoreload 13628 21848 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:06:36,716 autoreload 8252 8612 Watching for file changes with StatReloader
+INFO 2023-06-21 13:06:40,122 basehttp 8252 18004 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 13:06:40,265 basehttp 8252 18260 "GET /swagger/?format=openapi HTTP/1.1" 200 8309
+INFO 2023-06-21 13:06:40,268 basehttp 8252 18004 - Broken pipe from ('127.0.0.1', 53048)
+INFO 2023-06-21 13:09:26,074 autoreload 8252 8612 D:\bookstore_project\bookstore\bookstore\urls.py changed, reloading.
+INFO 2023-06-21 13:09:26,715 autoreload 12028 11620 Watching for file changes with StatReloader
+INFO 2023-06-21 13:09:37,244 autoreload 12028 11620 D:\bookstore_project\bookstore\bookstore\urls.py changed, reloading.
+INFO 2023-06-21 13:09:37,867 autoreload 23352 20888 Watching for file changes with StatReloader
+INFO 2023-06-21 13:10:05,779 autoreload 23352 20888 D:\bookstore_project\bookstore\bookstore\urls.py changed, reloading.
+INFO 2023-06-21 13:10:06,388 autoreload 21724 16360 Watching for file changes with StatReloader
+INFO 2023-06-21 13:13:36,293 autoreload 21724 16360 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:13:36,952 autoreload 3828 14840 Watching for file changes with StatReloader
+INFO 2023-06-21 13:13:40,971 autoreload 3828 14840 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:13:41,649 autoreload 6124 6044 Watching for file changes with StatReloader
+INFO 2023-06-21 13:13:44,601 autoreload 6124 6044 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:13:45,232 autoreload 17772 15344 Watching for file changes with StatReloader
+INFO 2023-06-21 13:13:48,137 autoreload 17772 15344 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:13:48,799 autoreload 10336 17584 Watching for file changes with StatReloader
+INFO 2023-06-21 13:13:53,765 autoreload 10336 17584 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:13:54,369 autoreload 18272 19016 Watching for file changes with StatReloader
+INFO 2023-06-21 13:14:15,534 autoreload 18272 19016 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:14:16,167 autoreload 15528 16268 Watching for file changes with StatReloader
+INFO 2023-06-21 13:14:42,792 basehttp 15528 16616 "GET /swagger/ HTTP/1.1" 200 2154
+ERROR 2023-06-21 13:14:43,077 log 15528 16616 Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\inspectors\view.py", line 36, in get_operation
+    parameters = self.add_manual_parameters(parameters)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\inspectors\view.py", line 161, in add_manual_parameters
+    if any(param.in_ == openapi.IN_BODY for param in manual_parameters):  # pragma: no cover
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\inspectors\view.py", line 161, in <genexpr>
+    if any(param.in_ == openapi.IN_BODY for param in manual_parameters):  # pragma: no cover
+AttributeError: 'builtin_function_or_method' object has no attribute 'in_'
+ERROR 2023-06-21 13:14:43,081 basehttp 15528 16616 "GET /swagger/?format=openapi HTTP/1.1" 500 142139
+INFO 2023-06-21 13:14:58,950 autoreload 15044 18344 Watching for file changes with StatReloader
+INFO 2023-06-21 13:15:01,851 basehttp 15044 14848 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 13:15:02,022 basehttp 15044 14848 - Broken pipe from ('127.0.0.1', 53457)
+ERROR 2023-06-21 13:15:02,071 log 15044 18496 Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\inspectors\view.py", line 36, in get_operation
+    parameters = self.add_manual_parameters(parameters)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\inspectors\view.py", line 161, in add_manual_parameters
+    if any(param.in_ == openapi.IN_BODY for param in manual_parameters):  # pragma: no cover
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\inspectors\view.py", line 161, in <genexpr>
+    if any(param.in_ == openapi.IN_BODY for param in manual_parameters):  # pragma: no cover
+AttributeError: 'builtin_function_or_method' object has no attribute 'in_'
+ERROR 2023-06-21 13:15:02,071 basehttp 15044 18496 "GET /swagger/?format=openapi HTTP/1.1" 500 142139
+INFO 2023-06-21 13:15:09,581 autoreload 15044 18344 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:15:10,281 autoreload 15476 10408 Watching for file changes with StatReloader
+INFO 2023-06-21 13:15:10,767 basehttp 15476 21992 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 13:15:10,909 basehttp 15476 19356 "GET /swagger/?format=openapi HTTP/1.1" 200 8165
+INFO 2023-06-21 13:15:14,370 basehttp 15476 19356 "GET /swagger/?format=openapi HTTP/1.1" 200 8165
+INFO 2023-06-21 13:15:25,154 autoreload 15476 10408 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:15:25,793 autoreload 5172 7744 Watching for file changes with StatReloader
+INFO 2023-06-21 13:15:59,793 autoreload 5172 7744 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 13:16:00,412 autoreload 1208 13992 Watching for file changes with StatReloader
+INFO 2023-06-21 13:40:50,973 autoreload 1208 13992 D:\bookstore_project\bookstore\books\serializers.py changed, reloading.
+INFO 2023-06-21 13:40:51,671 autoreload 15628 14564 Watching for file changes with StatReloader
+INFO 2023-06-21 13:41:01,088 autoreload 15628 14564 D:\bookstore_project\bookstore\books\serializers.py changed, reloading.
+INFO 2023-06-21 13:41:01,698 autoreload 5680 13072 Watching for file changes with StatReloader
+INFO 2023-06-21 13:42:25,973 basehttp 5680 12584 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 13:42:26,214 basehttp 5680 12584 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2023-06-21 13:42:26,537 basehttp 5680 12584 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 14964
+INFO 2023-06-21 13:42:26,577 basehttp 5680 10608 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2023-06-21 13:42:26,579 basehttp 5680 2036 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2023-06-21 13:42:26,721 basehttp 5680 16768 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2023-06-21 13:42:26,761 basehttp 5680 10476 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2023-06-21 13:42:26,970 basehttp 5680 18928 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2023-06-21 13:42:27,096 basehttp 5680 18928 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2023-06-21 13:42:27,140 basehttp 5680 18928 "GET /swagger/?format=openapi HTTP/1.1" 200 8165
+INFO 2023-06-21 13:46:37,359 autoreload 5680 13072 D:\bookstore_project\bookstore\bookstore\settings.py changed, reloading.
+INFO 2023-06-21 13:46:37,994 autoreload 14568 5208 Watching for file changes with StatReloader
+INFO 2023-06-21 13:46:40,982 autoreload 14568 5208 D:\bookstore_project\bookstore\bookstore\settings.py changed, reloading.
+INFO 2023-06-21 13:46:41,723 autoreload 12900 18120 Watching for file changes with StatReloader
+INFO 2023-06-21 13:48:17,258 basehttp 12900 14732 "GET /swagger/ HTTP/1.1" 200 2154
+ERROR 2023-06-21 13:48:17,854 log 12900 14732 Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 16, in cached_import
+    return getattr(module, class_name)
+AttributeError: module 'drf_yasg.openapi' has no attribute 'AutoSchema'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 177, in import_from_string
+    return import_string(val)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 32, in import_string
+    raise ImportError(
+ImportError: Module "drf_yasg.openapi" does not define a "AutoSchema" attribute/class
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 514, in get_operation
+    view_inspector_cls = swagger_settings.DEFAULT_AUTO_SCHEMA_CLASS
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\app_settings.py", line 122, in __getattr__
+    val = perform_import(val, attr)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 166, in perform_import
+    return import_from_string(val, setting_name)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 180, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'drf_yasg.openapi.AutoSchema' for API setting 'DEFAULT_AUTO_SCHEMA_CLASS'. ImportError: Module "drf_yasg.openapi" does not define a "AutoSchema" attribute/class.
+ERROR 2023-06-21 13:48:17,854 basehttp 12900 14732 "GET /swagger/?format=openapi HTTP/1.1" 500 151977
+INFO 2023-06-21 13:49:08,214 autoreload 17032 5924 Watching for file changes with StatReloader
+INFO 2023-06-21 13:49:12,941 basehttp 17032 18260 "GET /swagger/ HTTP/1.1" 200 2154
+ERROR 2023-06-21 13:49:13,199 log 17032 18260 Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 16, in cached_import
+    return getattr(module, class_name)
+AttributeError: module 'drf_yasg.openapi' has no attribute 'AutoSchema'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 177, in import_from_string
+    return import_string(val)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 32, in import_string
+    raise ImportError(
+ImportError: Module "drf_yasg.openapi" does not define a "AutoSchema" attribute/class
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 514, in get_operation
+    view_inspector_cls = swagger_settings.DEFAULT_AUTO_SCHEMA_CLASS
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\app_settings.py", line 122, in __getattr__
+    val = perform_import(val, attr)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 166, in perform_import
+    return import_from_string(val, setting_name)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 180, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'drf_yasg.openapi.AutoSchema' for API setting 'DEFAULT_AUTO_SCHEMA_CLASS'. ImportError: Module "drf_yasg.openapi" does not define a "AutoSchema" attribute/class.
+ERROR 2023-06-21 13:49:13,199 basehttp 17032 18260 "GET /swagger/?format=openapi HTTP/1.1" 500 151977
+INFO 2023-06-21 13:49:25,831 autoreload 17032 5924 D:\bookstore_project\bookstore\bookstore\settings.py changed, reloading.
+INFO 2023-06-21 13:49:26,623 autoreload 1640 11484 Watching for file changes with StatReloader
+INFO 2023-06-21 13:49:29,603 basehttp 1640 20624 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 13:49:29,836 basehttp 1640 20624 "GET /swagger/?format=openapi HTTP/1.1" 200 8165
+INFO 2023-06-21 13:50:43,224 autoreload 1640 11484 D:\bookstore_project\bookstore\bookstore\urls.py changed, reloading.
+INFO 2023-06-21 13:50:43,848 autoreload 14568 14784 Watching for file changes with StatReloader
+INFO 2023-06-21 13:50:49,987 autoreload 14568 14784 D:\bookstore_project\bookstore\bookstore\urls.py changed, reloading.
+INFO 2023-06-21 13:50:50,594 autoreload 9968 15648 Watching for file changes with StatReloader
+INFO 2023-06-21 13:50:58,925 autoreload 9968 15648 D:\bookstore_project\bookstore\bookstore\urls.py changed, reloading.
+INFO 2023-06-21 13:50:59,566 autoreload 11424 11964 Watching for file changes with StatReloader
+INFO 2023-06-21 13:51:37,471 autoreload 11424 11964 D:\bookstore_project\bookstore\bookstore\urls.py changed, reloading.
+INFO 2023-06-21 13:51:38,211 autoreload 14948 20240 Watching for file changes with StatReloader
+INFO 2023-06-21 13:51:44,593 autoreload 14948 20240 D:\bookstore_project\bookstore\bookstore\settings.py changed, reloading.
+INFO 2023-06-21 13:51:45,253 autoreload 13856 2768 Watching for file changes with StatReloader
+INFO 2023-06-21 13:51:50,684 basehttp 13856 12732 "GET /swagger/ HTTP/1.1" 200 2154
+ERROR 2023-06-21 13:51:50,887 log 13856 12916 Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 16, in cached_import
+    return getattr(module, class_name)
+AttributeError: module 'drf_yasg.openapi' has no attribute 'AutoSchema'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 177, in import_from_string
+    return import_string(val)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 32, in import_string
+    raise ImportError(
+ImportError: Module "drf_yasg.openapi" does not define a "AutoSchema" attribute/class
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 514, in get_operation
+    view_inspector_cls = swagger_settings.DEFAULT_AUTO_SCHEMA_CLASS
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\app_settings.py", line 122, in __getattr__
+    val = perform_import(val, attr)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 166, in perform_import
+    return import_from_string(val, setting_name)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 180, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'drf_yasg.openapi.AutoSchema' for API setting 'DEFAULT_AUTO_SCHEMA_CLASS'. ImportError: Module "drf_yasg.openapi" does not define a "AutoSchema" attribute/class.
+ERROR 2023-06-21 13:51:50,887 basehttp 13856 12916 "GET /swagger/?format=openapi HTTP/1.1" 500 151977
+ERROR 2023-06-21 13:51:59,283 log 13856 12916 Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 16, in cached_import
+    return getattr(module, class_name)
+AttributeError: module 'drf_yasg.openapi' has no attribute 'AutoSchema'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 177, in import_from_string
+    return import_string(val)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 32, in import_string
+    raise ImportError(
+ImportError: Module "drf_yasg.openapi" does not define a "AutoSchema" attribute/class
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 514, in get_operation
+    view_inspector_cls = swagger_settings.DEFAULT_AUTO_SCHEMA_CLASS
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\app_settings.py", line 122, in __getattr__
+    val = perform_import(val, attr)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 166, in perform_import
+    return import_from_string(val, setting_name)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 180, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'drf_yasg.openapi.AutoSchema' for API setting 'DEFAULT_AUTO_SCHEMA_CLASS'. ImportError: Module "drf_yasg.openapi" does not define a "AutoSchema" attribute/class.
+ERROR 2023-06-21 13:51:59,283 basehttp 13856 12916 "GET /swagger/ HTTP/1.1" 500 151457
+INFO 2023-06-21 13:52:04,747 basehttp 13856 12916 "GET /swagger HTTP/1.1" 301 0
+INFO 2023-06-21 13:52:04,763 basehttp 13856 12732 "GET /swagger/ HTTP/1.1" 200 2154
+ERROR 2023-06-21 13:52:04,943 log 13856 12732 Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 16, in cached_import
+    return getattr(module, class_name)
+AttributeError: module 'drf_yasg.openapi' has no attribute 'AutoSchema'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 177, in import_from_string
+    return import_string(val)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 32, in import_string
+    raise ImportError(
+ImportError: Module "drf_yasg.openapi" does not define a "AutoSchema" attribute/class
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 514, in get_operation
+    view_inspector_cls = swagger_settings.DEFAULT_AUTO_SCHEMA_CLASS
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\app_settings.py", line 122, in __getattr__
+    val = perform_import(val, attr)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 166, in perform_import
+    return import_from_string(val, setting_name)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 180, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'drf_yasg.openapi.AutoSchema' for API setting 'DEFAULT_AUTO_SCHEMA_CLASS'. ImportError: Module "drf_yasg.openapi" does not define a "AutoSchema" attribute/class.
+ERROR 2023-06-21 13:52:04,949 basehttp 13856 12732 "GET /swagger/?format=openapi HTTP/1.1" 500 151977
+INFO 2023-06-21 14:07:35,663 basehttp 13856 15516 "GET /swagger HTTP/1.1" 301 0
+WARNING 2023-06-21 14:07:35,691 log 13856 20588 Unauthorized: /swagger/
+WARNING 2023-06-21 14:07:35,691 basehttp 13856 20588 "GET /swagger/ HTTP/1.1" 401 16
+INFO 2023-06-21 14:07:47,731 basehttp 13856 7448 "GET /swagger/ HTTP/1.1" 200 2154
+ERROR 2023-06-21 14:07:47,957 log 13856 7448 Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 16, in cached_import
+    return getattr(module, class_name)
+AttributeError: module 'drf_yasg.openapi' has no attribute 'AutoSchema'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 177, in import_from_string
+    return import_string(val)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\utils\module_loading.py", line 32, in import_string
+    raise ImportError(
+ImportError: Module "drf_yasg.openapi" does not define a "AutoSchema" attribute/class
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\generators.py", line 514, in get_operation
+    view_inspector_cls = swagger_settings.DEFAULT_AUTO_SCHEMA_CLASS
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\drf_yasg\app_settings.py", line 122, in __getattr__
+    val = perform_import(val, attr)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 166, in perform_import
+    return import_from_string(val, setting_name)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\settings.py", line 180, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'drf_yasg.openapi.AutoSchema' for API setting 'DEFAULT_AUTO_SCHEMA_CLASS'. ImportError: Module "drf_yasg.openapi" does not define a "AutoSchema" attribute/class.
+ERROR 2023-06-21 14:07:47,957 basehttp 13856 7448 "GET /swagger/?format=openapi HTTP/1.1" 500 151977
+INFO 2023-06-21 14:10:54,152 autoreload 13856 2768 D:\bookstore_project\bookstore\bookstore\settings.py changed, reloading.
+INFO 2023-06-21 14:10:54,879 autoreload 13804 1128 Watching for file changes with StatReloader
+INFO 2023-06-21 14:10:56,863 autoreload 13804 1128 D:\bookstore_project\bookstore\bookstore\settings.py changed, reloading.
+INFO 2023-06-21 14:10:57,599 autoreload 18900 6016 Watching for file changes with StatReloader
+INFO 2023-06-21 14:11:00,586 basehttp 18900 16896 "GET /swagger/?format=openapi HTTP/1.1" 200 8165
+INFO 2023-06-21 14:58:13,603 autoreload 18900 6016 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 14:58:14,355 autoreload 14560 20124 Watching for file changes with StatReloader
+INFO 2023-06-21 14:58:22,313 basehttp 14560 6324 "GET /swagger/?format=openapi HTTP/1.1" 200 9188
+INFO 2023-06-21 14:58:24,741 basehttp 14560 6324 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 14:58:24,917 basehttp 14560 2204 "GET /swagger/?format=openapi HTTP/1.1" 200 9188
+INFO 2023-06-21 14:58:24,925 basehttp 14560 6324 - Broken pipe from ('127.0.0.1', 56746)
+INFO 2023-06-21 14:58:43,161 autoreload 14560 20124 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 14:58:43,836 autoreload 20932 8352 Watching for file changes with StatReloader
+INFO 2023-06-21 14:58:47,378 basehttp 20932 9356 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 14:58:47,527 basehttp 20932 10752 "GET /swagger/?format=openapi HTTP/1.1" 200 8165
+INFO 2023-06-21 14:58:47,549 basehttp 20932 9356 - Broken pipe from ('127.0.0.1', 56753)
+INFO 2023-06-21 14:58:55,875 autoreload 20932 8352 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 14:58:56,531 autoreload 17672 3572 Watching for file changes with StatReloader
+INFO 2023-06-21 14:58:59,437 autoreload 17672 3572 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 14:59:00,166 autoreload 20724 13420 Watching for file changes with StatReloader
+INFO 2023-06-21 14:59:08,663 autoreload 20724 13420 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 14:59:09,313 autoreload 19916 6044 Watching for file changes with StatReloader
+INFO 2023-06-21 14:59:19,898 autoreload 19916 6044 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 14:59:20,654 autoreload 21316 16392 Watching for file changes with StatReloader
+INFO 2023-06-21 14:59:23,272 basehttp 21316 17152 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 14:59:23,448 basehttp 21316 17152 "GET /swagger/?format=openapi HTTP/1.1" 200 11576
+INFO 2023-06-21 14:59:53,650 basehttp 21316 10804 "GET /swagger HTTP/1.1" 301 0
+WARNING 2023-06-21 14:59:53,679 log 21316 15008 Unauthorized: /swagger/
+WARNING 2023-06-21 14:59:53,679 basehttp 21316 15008 "GET /swagger/ HTTP/1.1" 401 16
+INFO 2023-06-21 15:00:02,870 basehttp 21316 17152 "GET /swagger/?format=openapi HTTP/1.1" 200 11576
+INFO 2023-06-21 15:01:23,596 autoreload 21316 16392 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 15:01:24,443 autoreload 15632 5280 Watching for file changes with StatReloader
+INFO 2023-06-21 15:01:26,727 basehttp 15632 22328 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 15:01:26,896 basehttp 15632 8564 "GET /swagger/?format=openapi HTTP/1.1" 200 11915
+INFO 2023-06-21 15:01:26,904 basehttp 15632 22328 - Broken pipe from ('127.0.0.1', 56874)
+INFO 2023-06-21 15:01:50,911 basehttp 15632 8564 "GET /login/ HTTP/1.1" 200 4527
+INFO 2023-06-21 15:02:44,335 basehttp 15632 8564 "POST /login/ HTTP/1.1" 200 30
+INFO 2023-06-21 15:03:10,980 basehttp 15632 8564 "GET /user_list/ HTTP/1.1" 200 4527
+ERROR 2023-06-21 15:05:30,802 log 15632 19876 Internal Server Error: /books/1
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: BookViews.post() got an unexpected keyword argument 'id'
+ERROR 2023-06-21 15:05:30,804 basehttp 15632 19876 "POST /books/1 HTTP/1.1" 500 18672
+WARNING 2023-06-21 15:06:04,863 log 15632 19876 Unauthorized: /rating/1
+WARNING 2023-06-21 15:06:04,863 basehttp 15632 19876 "GET /rating/1 HTTP/1.1" 401 58
+INFO 2023-06-21 15:06:20,000 basehttp 15632 19876 "GET /rating/1 HTTP/1.1" 200 57
+INFO 2023-06-21 15:06:28,425 basehttp 15632 19876 "GET /rating/6 HTTP/1.1" 200 109
+INFO 2023-06-21 15:06:57,178 views 15632 19876 this is books get request
+INFO 2023-06-21 15:06:57,190 basehttp 15632 19876 "GET /books/2 HTTP/1.1" 200 132
+INFO 2023-06-21 15:07:08,661 views 15632 19876 this is books get request
+INFO 2023-06-21 15:07:08,673 basehttp 15632 19876 "GET /books/1 HTTP/1.1" 200 67
+INFO 2023-06-21 15:08:10,350 basehttp 15632 19876 "GET /user/6 HTTP/1.1" 200 120
+ERROR 2023-06-21 15:08:38,166 log 15632 19876 Internal Server Error: /user/6
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: UserViews.post() got an unexpected keyword argument 'id'
+ERROR 2023-06-21 15:08:38,167 basehttp 15632 19876 "POST /user/6 HTTP/1.1" 500 18706
+WARNING 2023-06-21 15:08:57,913 log 15632 1156 Unauthorized: /user/6
+WARNING 2023-06-21 15:08:57,914 basehttp 15632 1156 "POST /user/6 HTTP/1.1" 401 183
+INFO 2023-06-21 15:09:06,031 basehttp 15632 1156 "POST /login/ HTTP/1.1" 200 532
+WARNING 2023-06-21 15:09:30,647 log 15632 1156 Bad Request: /user/
+WARNING 2023-06-21 15:09:30,648 basehttp 15632 1156 "POST /user/ HTTP/1.1" 400 56
+ERROR 2023-06-21 15:09:43,785 log 15632 1156 Internal Server Error: /user/6
+Traceback (most recent call last):
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\bookstore_project\bookstore_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: UserViews.post() got an unexpected keyword argument 'id'
+ERROR 2023-06-21 15:09:43,786 basehttp 15632 1156 "POST /user/6 HTTP/1.1" 500 89781
+INFO 2023-06-21 15:12:35,353 autoreload 15632 5280 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 15:12:36,043 autoreload 6004 21588 Watching for file changes with StatReloader
+INFO 2023-06-21 15:12:39,147 autoreload 6004 21588 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 15:12:39,976 autoreload 1044 17868 Watching for file changes with StatReloader
+INFO 2023-06-21 15:12:58,171 basehttp 1044 14688 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 15:12:58,343 basehttp 1044 10308 "GET /swagger/?format=openapi HTTP/1.1" 200 11247
+INFO 2023-06-21 15:12:58,359 basehttp 1044 14688 - Broken pipe from ('127.0.0.1', 57420)
+INFO 2023-06-21 15:13:29,006 autoreload 1044 17868 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 15:13:29,659 autoreload 652 3572 Watching for file changes with StatReloader
+INFO 2023-06-21 15:13:31,643 autoreload 652 3572 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 15:13:32,379 autoreload 12724 4416 Watching for file changes with StatReloader
+INFO 2023-06-21 15:13:34,353 autoreload 12724 4416 D:\bookstore_project\bookstore\books\views.py changed, reloading.
+INFO 2023-06-21 15:13:34,991 autoreload 21976 7104 Watching for file changes with StatReloader
+INFO 2023-06-21 15:13:37,870 basehttp 21976 21960 "GET /swagger/ HTTP/1.1" 200 2154
+INFO 2023-06-21 15:13:38,030 basehttp 21976 21068 "GET /swagger/?format=openapi HTTP/1.1" 200 11915
+INFO 2023-06-21 15:13:38,032 basehttp 21976 21960 - Broken pipe from ('127.0.0.1', 57466)
+INFO 2023-06-21 15:31:33,174 autoreload 21976 7104 D:\bookstore_project\bookstore\books\admin.py changed, reloading.
+INFO 2023-06-21 15:31:33,992 autoreload 9336 18212 Watching for file changes with StatReloader
+INFO 2023-06-21 15:31:36,823 autoreload 9336 18212 D:\bookstore_project\bookstore\books\admin.py changed, reloading.
+INFO 2023-06-21 15:31:37,507 autoreload 14804 2204 Watching for file changes with StatReloader
+INFO 2023-06-21 15:31:39,224 autoreload 14804 2204 D:\bookstore_project\bookstore\books\admin.py changed, reloading.
+INFO 2023-06-21 15:31:39,854 autoreload 18876 21892 Watching for file changes with StatReloader
+INFO 2023-06-21 15:31:53,363 autoreload 18876 21892 D:\bookstore_project\bookstore\books\admin.py changed, reloading.
+INFO 2023-06-21 15:31:54,048 autoreload 5232 4944 Watching for file changes with StatReloader
+INFO 2023-06-21 15:31:56,731 autoreload 5232 4944 D:\bookstore_project\bookstore\books\admin.py changed, reloading.
+INFO 2023-06-21 15:31:57,379 autoreload 9104 15044 Watching for file changes with StatReloader
+INFO 2023-06-21 15:32:21,980 autoreload 9104 15044 D:\bookstore_project\bookstore\books\admin.py changed, reloading.
+INFO 2023-06-21 15:32:22,655 autoreload 8616 6628 Watching for file changes with StatReloader
+WARNING 2023-06-21 15:42:45,666 log 8616 9876 Bad Request: /books/
+WARNING 2023-06-21 15:42:45,667 basehttp 8616 9876 "POST /books/ HTTP/1.1" 400 151
+INFO 2023-06-21 15:44:33,633 basehttp 8616 9876 "POST /books/ HTTP/1.1" 200 227

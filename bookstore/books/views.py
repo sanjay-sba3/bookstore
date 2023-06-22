@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework.generics import ListAPIView
+from rest_framework.generics import ListAPIView, GenericAPIView
 from .serializers import BooksSerializer, UserSerializer, RatingSerializer, CategorySerializer
 from .models import User, Book, Rating, Category
 from rest_framework import status
@@ -12,6 +12,7 @@ from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.permissions import IsAuthenticated
 import logging,traceback
 logger = logging.getLogger('django')
+from drf_yasg.utils import swagger_auto_schema
 
 
 def get_tokens_for_user(user):
@@ -22,7 +23,9 @@ def get_tokens_for_user(user):
   }
 
 # Login using Valid Username and Password 
-class LoginView(APIView):
+class LoginView(ListAPIView):
+    queryset = User.objects.all() 
+    serializer_class = UserSerializer
     def post(self, request):
         loginuser = request.data['username']
         loginpass = request.data['password']
@@ -42,12 +45,12 @@ class UserListAPIView(APIView):
 
 # CRUD Oparation for Books
 class BookViews(ListAPIView):
-    authentication_Classes = [JWTAuthentication]
-    permission_classes = (IsAuthenticated,)
-    queryset = Book.objects.all()                     # fatching data
-    serializer_class = BooksSerializer                 # Use rto serializer for data fatched  
-    filter_backends = [SearchFilter]
-    search_fields = ['User.id','Category.name']
+    # authentication_Classes = [JWTAuthentication]
+    # permission_classes = (IsAuthenticated,)
+    # queryset = Book.objects.all()                     # fatching data
+    serializer_class = BooksSerializer                 # Use for serializer for data fatched  
+    # filter_backends = [SearchFilter]
+    # search_fields = ['User.id','Category.name']
 
 
     def get(self, request, id = None):
@@ -147,6 +150,8 @@ class BookViews(ListAPIView):
 class CategoryViews(ListAPIView):
     authentication_Classes = [JWTAuthentication]
     permission_classes = (IsAuthenticated,)
+    queryset = Category.objects.all() 
+    serializer_class = CategorySerializer
 
     def get(self, request, id = None):
         if id == None: 
@@ -225,9 +230,11 @@ class CategoryViews(ListAPIView):
 
 # CRUD Oparation for users
 class UserViews(ListAPIView):
-
     authentication_Classes = [JWTAuthentication]
-    permission_classes = (IsAuthenticated,)
+    permission_classes = [IsAuthenticated,]
+    queryset = User.objects.all() 
+    serializer_class = UserSerializer
+    
     
     def get(self, request, id = None):
         if id == None:    
@@ -245,7 +252,9 @@ class UserViews(ListAPIView):
                 book = Book.objects.filter(user=id)
                 serializer_book = BooksSerializer(book, many = True)
                 return Response({"Username":serializer.data[0]["username"], "titles": [x["title"] for x in serializer_book.data]})
-            
+    
+    
+    # @swagger_auto_schema(manual_parameters=[all],)        
     def post(self, request):
         
         serializer = UserSerializer(data=request.data)
@@ -299,9 +308,11 @@ class UserViews(ListAPIView):
                                 })
 
 # CRUD Oparation for ratings
-class RatingViews(APIView):
+class RatingViews(ListAPIView):
     authentication_Classes = [JWTAuthentication]
-    permission_classes = (IsAuthenticated,)
+    permission_classes = [IsAuthenticated,]
+    queryset = Rating.objects.all() 
+    serializer_class = RatingSerializer
     def get(self, request, id = None):
         if id == None:    
             rating = Rating.objects.all()
